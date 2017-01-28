@@ -1,0 +1,25 @@
+#!/bin/bash
+#i3wm startup cmds
+xset -dpms&
+xset s off&
+xset m default
+#xset +fp /usr/share/fonts/X11/misc
+
+synclient  TapButton1=1
+synclient  TapButton2=3
+synclient  TapButton3=2
+xchainkeys&
+/home/komm/.i3/genEnv&
+#/home/komm/.i3/bashEnv&
+#/home/komm/.i3/javaEnv&
+tmux new -s dev -d
+tmux new -s web_dev -d
+tmux send -t web_dev:1 'cd /opt/lampp/htdocs/' c-m
+feh --bg-center '/home/komm/Immagini/Routine-Text-8_www.FullHDWpp.com_inv.png'
+xbacklight -set 8.913934
+#xgamma -gamma .99
+numlockx on & 
+xmodmap /home/komm/.i3/key_remap &
+xcompmgr &
+nm-applet &
+#conky|dzen2 -y 768 & #-fn Droid\ Sans\ Mono 

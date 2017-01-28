@@ -1,0 +1,12 @@
+! Swap caps lock and escape
+remove Lock = Caps_Lock
+keysym Escape = Caps_Lock
+keysym Caps_Lock = Escape
+add Lock = Caps_Lock
+keycode  24 = q Q q Q parenleft Greek_OMEGA
+keycode  25 = w W w W parenright parenright parenright
+keycode 38 =  a A a A bracketleft bracketleft bracketleft 
+keycode 39 =  s S s S bracketright bracketright bracketright 
+keycode  52 = z Z z Z braceleft braceleft
+keycode  53 = x X x X braceright braceright braceright
+

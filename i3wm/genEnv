@@ -1,0 +1,8 @@
+#!/bin/bash
+
+tmux new -s gen -d 
+tmux send -t gen:1 'ranger' C-m
+tmux new-window -t gen
+tmux send -t gen:2 'mocp' C-m
+tmux new-window -t gen
+tmux select-window -t gen:3
