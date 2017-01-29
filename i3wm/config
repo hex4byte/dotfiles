@@ -186,14 +186,7 @@ bindsym $mod+Shift+x exec "xbacklight -inc 1"
 # resize window (you can also use the mouse for that)
 #bindsym $mod+Shift+o mode "launcher"
 set $w_launch "[g] Whonix Gateway - [w] Whonix Workstation"
-#bindsym $mod+Shift+o mode $w_launch
-#mode $w_launch{
-##
-#        bindsym g exec   vboxsdl --startvm 'Wonix-Gateway';mode "default"
-#        bindsym w exec   vboxsdl --startvm 'Whonix-Workstation';mode "default"
-#        bindsym Escape mode "default"
-#        bindsym Return mode "default"
-#}
+
 mode "resize" {
         # These bindings trigger as soon as you enter the resize mode
 
